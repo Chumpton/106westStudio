@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio 106 West | Custom Laser Engravings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-content">
+      <a href="#home" class="logo-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D4AF37"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="m4.93 4.93 14.14 14.14" />
+          <path d="M12 2v4" />
+          <path d="M12 18v4" />
+          <path d="M2 12h4" />
+          <path d="M18 12h4" />
+        </svg>
+        <span class="logo-text">Studio 106 West</span>
+      </a>
+      <div class="desktop-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#custom-order" class="btn btn-primary">Create Order</a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#shop" class="mobile-link">Shop</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#custom-order" class="mobile-link">Custom Order</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image: url('images/wood-bg.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrapper">
+        <img src="images/hero-logo.png" alt="Studio 106 West" class="hero-logo">
+      </div>
+      <h1 class="hero-title">Studio 106 West</h1>
+      <p class="hero-subtitle">Custom Laser Engravings • Island Heights, NJ</p>
+      <div class="hero-buttons">
+        <a href="#shop" class="btn btn-light">View Collection</a>
+        <a href="#contact" class="btn btn-outline-light">Get In Touch</a>
+      </div>
+      <div class="product-categories">
+        <a href="#custom-order" class="category-item">
+          <img src="images/board2.png" alt="Board" class="category-img category-img-large">
+          <span class="category-label">Board</span>
+        </a>
+        <a href="#custom-order" class="category-item">
+          <img src="images/mug2.png" alt="Tumbler" class="category-img">
+          <span class="category-label">Tumbler</span>
+        </a>
+        <a href="#custom-order" class="category-item">
+          <img src="images/phone.png" alt="Case" class="category-img">
+          <span class="category-label">Case</span>
+        </a>
+        <a href="#custom-order" class="category-item">
+          <img src="images/watch1.png" alt="Watch" class="category-img">
+          <span class="category-label">Watch</span>
+        </a>
+        <a href="#custom-order" class="category-item">
+          <img src="images/stone1.png" alt="Memorial" class="category-img">
+          <span class="category-label">Memorial</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work Section -->
+  <section class="section" id="featured">
+    <div class="container">
+      <h2 class="section-title">Crafted With Precision</h2>
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <img src="images/board.jpg" alt="Custom Cutting Board" class="showcase-img">
+          <div class="showcase-info">
+            <h3>Custom Home Decor</h3>
+            <p>Personalized cutting boards, signage, and more for your home.</p>
+          </div>
+        </div>
+        <div class="showcase-card">
+          <img src="images/wood-bg.jpg" alt="Detailed Engravings" class="showcase-img">
+          <div class="showcase-info">
+            <h3>Detailed Engraving</h3>
+            <p>Intricate designs on wood, acrylic, and other materials.</p>
+          </div>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ccc"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+              <circle cx="9" cy="9" r="2" />
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+            </svg>
+          </div>
+          <div class="showcase-info">
+            <h3>Corporate Gifts</h3>
+            <p>Branded items and awards for your business needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section class="section bg-light" id="shop">
+    <div class="container">
+      <div class="shop-banner">
+        <div class="banner-content">
+          <h2 class="banner-heading">Your Dog. <span class="text-gold">Your People.</span></h2>
+          <p class="banner-sub">Custom engraved tumblers, slate coasters, and more.</p>
+          <a href="#contact" class="btn btn-outline-light">Start Creating</a>
+        </div>
+        <div class="banner-visual"></div>
+      </div>
+
+      <div class="shop-header">
+        <h2 class="section-title">Our Collection</h2>
+        <p>Explore our handcrafted, laser-engraved goods.</p>
+      </div>
+
+      <div class="shop-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+        <button class="filter-btn" data-filter="gifts">Gifts</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card" data-category="kitchen">
+          <div class="product-image-wrapper">
+            <img src="images/board.jpg" alt="Custom Cutting Board" class="product-img">
+            <a href="#contact" class="overlay-btn">Inquire Now</a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Custom Cutting Board</h3>
+            <p class="product-price">Starts at $45</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="corporate">
+          <div class="product-image-wrapper">
+            <img src="images/wood-bg.jpg" alt="Engraved Logo Block" class="product-img">
+            <a href="#contact" class="overlay-btn">Inquire Now</a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Engraved Logo Block</h3>
+            <p class="product-price">Starts at $25</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="gifts">
+          <div class="product-image-wrapper">
+            <img src="images/wood-bg.jpg" alt="Matte Black Tumbler" class="product-img">
+            <a href="#contact" class="overlay-btn">Inquire Now</a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Matte Black Tumbler</h3>
+            <p class="product-price">$28</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="events">
+          <div class="product-image-wrapper">
+            <img src="images/wood-bg.jpg" alt="Wedding Signage" class="product-img">
+            <a href="#contact" class="overlay-btn">Inquire Now</a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Wedding Signage</h3>
+            <p class="product-price">Custom Quote</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="gifts">
+          <div class="product-image-wrapper">
+            <img src="images/board.jpg" alt="River Stone Memorial" class="product-img">
+            <a href="#contact" class="overlay-btn">Inquire Now</a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">River Stone Memorial</h3>
+            <p class="product-price">$35</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="corporate">
+          <div class="product-image-wrapper">
+            <img src="images/board.jpg" alt="Business Card Holder" class="product-img">
+            <a href="#contact" class="overlay-btn">Inquire Now</a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Business Card Holder</h3>
+            <p class="product-price">$20</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section bg-dark" id="contact">
+    <div class="container">
+      <div class="contact-header">
+        <h2 class="contact-title">Start Your Project</h2>
+        <div class="title-underline"></div>
+        <p class="contact-subtitle">Tell us what you want to create.</p>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" class="form-input" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-input" placeholder="Email*" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-textarea" placeholder="Message" required></textarea>
+        </div>
+        <div class="form-checkbox-group">
+          <label class="checkbox-container">
+            <input type="checkbox" name="newsletter">
+            <span class="checkmark"></span>
+            <span class="checkbox-label">Sign up for our email list for updates, promotions, and more.</span>
+          </label>
+        </div>
+        <button type="submit" class="btn-submit">SEND</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Custom Order Section -->
+  <section class="section" id="custom-order">
+    <div class="container">
+      <div class="order-header">
+        <h2 class="section-title">Design Your Custom Piece</h2>
+        <p>Select a product and tell us your vision.</p>
+      </div>
+
+      <div class="order-content">
+        <div class="product-selector">
+          <h3 class="selector-title">1. Choose Your Canvas</h3>
+          <div class="canvas-options">
+            <div class="canvas-option active" data-product="Cutting Board">
+              <img src="images/board2.png" alt="Board" class="canvas-img canvas-img-large">
+              <span>Board</span>
+            </div>
+            <div class="canvas-option" data-product="Tumbler">
+              <img src="images/mug2.png" alt="Tumbler" class="canvas-img">
+              <span>Tumbler</span>
+            </div>
+            <div class="canvas-option" data-product="Phone Case">
+              <img src="images/phone.png" alt="Case" class="canvas-img">
+              <span>Case</span>
+            </div>
+            <div class="canvas-option" data-product="Watch Band">
+              <img src="images/watch1.png" alt="Watch" class="canvas-img">
+              <span>Watch</span>
+            </div>
+            <div class="canvas-option" data-product="Memorial Stone">
+              <img src="images/stone1.png" alt="Memorial" class="canvas-img">
+              <span>Memorial</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="order-form" id="order-form">
+          <input type="hidden" name="productType" id="productType" value="Cutting Board">
+          <div class="form-group">
+            <label for="engravingText">Engraving Text</label>
+            <textarea name="engravingText" id="engravingText" class="form-textarea"
+              placeholder="Enter the exact text you want engraved (names, dates, quotes...)" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="specialRequests">Special Instructions / Design Details</label>
+            <textarea name="specialRequests" id="specialRequests" class="form-textarea"
+              placeholder="Describe any specific fonts, placement, or graphics..." rows="4"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" name="contactName" id="contactName" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" name="contactEmail" id="contactEmail" class="form-input" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Submit Request</button>
+          <p class="form-note">We will send a digital proof for approval before engraving.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section bg-light" id="about">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="images/rj-wilkins.png" alt="R.J. Wilkins" class="maker-img">
+      </div>
+      <div class="about-content">
+        <h2 class="about-heading">Meet the Maker</h2>
+        <h3 class="about-subheading">R.J. Wilkins, Laser Technician</h3>
+        <p class="about-text">Located in the heart of Island Heights, New Jersey, Studio 106 West specializes in
+          bringing your ideas to life through high-quality laser engraving. Whether it's a personalized gift or custom
+          branding, we ensure every piece is crafted with nautical precision and care.</p>
+        <blockquote class="about-quote">"Just Dig the Hole."</blockquote>
+        <a href="#contact" class="btn btn-primary">Work With R.J.</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="m4.93 4.93 14.14 14.14" />
+            <path d="M12 2v4" />
+            <path d="M12 18v4" />
+            <path d="M2 12h4" />
+            <path d="M18 12h4" />
+          </svg>
+          <h3 class="footer-heading">Studio 106 West</h3>
+        </div>
+        <p class="footer-desc">Custom laser engraving services specializing in high-quality, personalized wooden and
+          acrylic products.</p>
+      </div>
+      <div class="footer-links">
+        <h4 class="footer-heading">Navigate</h4>
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#shop" class="footer-link">Shop</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-connect">
+        <h4 class="footer-heading">Connect</h4>
+        <p class="footer-desc">Island Heights, NJ</p>
+        <div class="socials">
+          <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2024 Studio 106 West. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
