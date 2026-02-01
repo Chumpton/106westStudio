@@ -121,3 +121,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ===== Ping Pong Video Logic =====
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('pingPongVideo');
+    if (!video) return;
+
+    let animationFrame;
+    let lastTime = Date.now();
+    let isReversing = false;
+
+    const animateReverse = () => {
+        const now = Date.now();
+        const dt = (now - lastTime) / 1000;
+        lastTime = now;
+
+        if (video.currentTime <= 0) {
+            video.currentTime = 0;
+            video.playbackRate = 1;
+            video.play();
+            isReversing = false;
+            return;
+        }
+
+        video.currentTime -= dt * 1.5;
+        if (isReversing) {
+            animationFrame = requestAnimationFrame(animateReverse);
+        }
+    };
+
+    video.addEventListener('ended', () => {
+        video.pause();
+        isReversing = true;
+        lastTime = Date.now();
+        animationFrame = requestAnimationFrame(animateReverse);
+    });
+
+    video.muted = true;
+    video.play().catch(e => console.log('Autoplay blocked', e));
+});
